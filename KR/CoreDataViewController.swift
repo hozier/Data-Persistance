@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DependentComponentPickerViewController: UIViewController {
+class CoreDataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
