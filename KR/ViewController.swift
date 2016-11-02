@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    private static let rootKey = "rootKey"
     @IBOutlet var lineFields:[UITextField]!
 
     override func viewDidLoad() {
@@ -21,6 +22,17 @@ class ViewController: UIViewController {
             if let array = NSArray(contentsOfURL: fileURL) as? [String] {
                 for var i = 0; i < array.count; i++ {
                     lineFields[i].text = array[i]
+                }
+            }
+            
+            let data = NSMutableData(contentsOfURL: fileURL)!
+            let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
+            let fourLines = unarchiver.decodeObjectForKey(ViewController.rootKey) as! FourLines
+            unarchiver.finishDecoding()
+            
+            if let newLines = fourLines.lines {
+                for var i = 0; i < newLines.count; i++ {
+                    lineFields[i].text = newLines[i]
                 }
             }
         }
@@ -37,13 +49,21 @@ class ViewController: UIViewController {
     func dataFileURL() -> NSURL {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         
-        return urls.first!.URLByAppendingPathComponent("data.plist")
+        return urls.first!.URLByAppendingPathComponent("data.archive")
     }
     
     func applicationWillResignActive(notification: NSNotification) {
         let fileURL = self.dataFileURL()
-        let array = (self.lineFields as NSArray).valueForKey("text") as! NSArray
-        array.writeToURL(fileURL, atomically: true)
+        let fourLines = FourLines()
+        let array = (self.lineFields as NSArray).valueForKey("text") as! [String]
+        fourLines.lines = array
+        
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
+        archiver.encodeObject(fourLines, forKey: ViewController.rootKey)
+        archiver.finishEncoding()
+        
+        data.writeToURL(fileURL, atomically: true)
     }
     
 
