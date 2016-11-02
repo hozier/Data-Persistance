@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Single-->
+        <!--SQLite-->
         <scene sceneID="5F5-ar-Nmh">
             <objects>
-                <viewController title="Single" id="Fb8-HH-0nz" customClass="SingleComponentPickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SQLite" id="Fb8-HH-0nz" customClass="SingleComponentPickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YWs-Kc-x3V"/>
                         <viewControllerLayoutGuide type="bottom" id="xYD-nX-EV8"/>
@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="1440" y="-113"/>
         </scene>
-        <!--Dependent-->
+        <!--Core Data-->
         <scene sceneID="hnk-en-Plg">
             <objects>
-                <viewController title="Dependent" id="OnI-4G-t7I" customClass="DependentComponentPickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Core Data" id="OnI-4G-t7I" customClass="DependentComponentPickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XBO-u5-hTt"/>
                         <viewControllerLayoutGuide type="bottom" id="Sbj-UK-lim"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="2166" y="-113"/>
         </scene>
-        <!--Date-->
+        <!--Plist-->
         <scene sceneID="moc-62-dtf">
             <objects>
-                <viewController title="Date" id="mPo-l8-syO" customClass="DatePickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Plist" id="mPo-l8-syO" customClass="DatePickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ziu-qB-Zbs"/>
                         <viewControllerLayoutGuide type="bottom" id="Zka-Ng-0IP"/>
