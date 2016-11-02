@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C05E8FF1DC9830E002BAB74 /* Lines+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */; };
-		0C05E9001DC9830E002BAB74 /* Lines+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */; };
+		0C05E8FF1DC9830E002BAB74 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E8FD1DC9830E002BAB74 /* Lines.swift */; };
 		0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBE91A1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld */; };
 		0CCBE91F1DC977F1002C8F28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCBE91E1DC977F1002C8F28 /* CoreData.framework */; };
 		0CCBE9211DC97871002C8F28 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBE9201DC97871002C8F28 /* DataController.swift */; };
@@ -17,16 +16,11 @@
 		9786AA8C1DB2EDEB00576C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8A1DB2EDEB00576C5A /* Main.storyboard */; };
 		9786AA8E1DB2EDEB00576C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */; };
 		9786AA911DB2EDEB00576C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */; };
-		9786AA991DB2F02800576C5A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA981DB2F02800576C5A /* DatePickerViewController.swift */; };
-		9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */; };
-		9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */; };
 		9786AA9F1DB2F06A00576C5A /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */; };
-		9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lines+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lines+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C05E8FD1DC9830E002BAB74 /* Lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
 		0CCBE91B1DC9756B002C8F28 /* DemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoDataModel.xcdatamodel; sourceTree = "<group>"; };
 		0CCBE91E1DC977F1002C8F28 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0CCBE9201DC97871002C8F28 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -37,11 +31,7 @@
 		9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9786AA901DB2EDEB00576C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9786AA921DB2EDEB00576C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9786AA981DB2F02800576C5A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
-		9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +82,7 @@
 				9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */,
 				9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */,
 				9786AA921DB2EDEB00576C5A /* Info.plist */,
-				0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */,
-				0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */,
-				9786AA981DB2F02800576C5A /* DatePickerViewController.swift */,
-				9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */,
-				9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */,
-				9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */,
+				0C05E8FD1DC9830E002BAB74 /* Lines.swift */,
 				9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */,
 			);
 			path = KR;
@@ -176,16 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9786AA891DB2EDEB00576C5A /* ViewController.swift in Sources */,
-				0C05E8FF1DC9830E002BAB74 /* Lines+CoreDataClass.swift in Sources */,
+				0C05E8FF1DC9830E002BAB74 /* Lines.swift in Sources */,
 				9786AA871DB2EDEB00576C5A /* AppDelegate.swift in Sources */,
-				0C05E9001DC9830E002BAB74 /* Lines+CoreDataProperties.swift in Sources */,
 				0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */,
 				9786AA9F1DB2F06A00576C5A /* CoreDataViewController.swift in Sources */,
 				0CCBE9211DC97871002C8F28 /* DataController.swift in Sources */,
-				9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */,
-				9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */,
-				9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */,
-				9786AA991DB2F02800576C5A /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class CoreDataViewController: UIViewController {
+    
 
     @IBOutlet weak var lineOneTextField: UITextField!
     @IBOutlet weak var lineTwoTextField: UITextField!
@@ -16,6 +18,58 @@ class CoreDataViewController: UIViewController {
     @IBOutlet weak var lineTwoLabel: UILabel!
     
     @IBAction func commitToPersistence(sender: UIButton) {
+        // create an instance of our managedObjectContext
+        let managedobjcontext = DataController().managedObjectContext
+        
+        //clear context before recommitting
+        let linesFetch = NSFetchRequest(entityName: "Lines")
+        
+        do {
+            let fetchedLines = try managedobjcontext.executeFetchRequest(linesFetch) as! [Lines]
+            
+            for linesObj in fetchedLines {
+                managedobjcontext.deleteObject(linesObj)
+            }
+            
+        } catch {
+            fatalError("Failed to fetch Lines (due to coredata issue: \(error)")
+        }
+        //the code in here is for clearing the context
+        
+        
+        
+        //creates a managed object instance
+        let entity = NSEntityDescription.insertNewObjectForEntityForName("Lines", inManagedObjectContext: managedobjcontext) as! Lines
+        
+        // add our data
+        entity.setValue(lineOneTextField.text, forKey: "line1")
+        entity.setValue(lineTwoTextField.text, forKey: "line2")
+        
+        // we save our entity
+        do {
+            try managedobjcontext.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
+        
+    }
+    
+    @IBAction func pullFromPersistence(sender: UIButton) {
+        
+        let managedobjcontext = DataController().managedObjectContext
+        let linesFetch = NSFetchRequest(entityName: "Lines")
+        
+        do {
+            let fetchedLines = try managedobjcontext.executeFetchRequest(linesFetch) as! [Lines]
+            
+            lineOneLabel.text = fetchedLines.first!.line1
+            lineTwoLabel.text = fetchedLines.first!.line2
+            
+        } catch {
+            fatalError("Failed to fetch Lines (due to coredata issue: \(error)")
+        }
+        
+        
         
     }
     

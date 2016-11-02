@@ -12,4 +12,8 @@ import CoreData
 @objc(Lines)
 public class Lines: NSManagedObject {
 
+    @NSManaged public var line1: String?
+    @NSManaged public var line2: String?
 }
+
+
