@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBE91A1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld */; };
 		9786AA871DB2EDEB00576C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA861DB2EDEB00576C5A /* AppDelegate.swift */; };
 		9786AA891DB2EDEB00576C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA881DB2EDEB00576C5A /* ViewController.swift */; };
 		9786AA8C1DB2EDEB00576C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8A1DB2EDEB00576C5A /* Main.storyboard */; };
@@ -15,11 +16,12 @@
 		9786AA991DB2F02800576C5A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA981DB2F02800576C5A /* DatePickerViewController.swift */; };
 		9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */; };
 		9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */; };
-		9786AA9F1DB2F06A00576C5A /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */; };
+		9786AA9F1DB2F06A00576C5A /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */; };
 		9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CCBE91B1DC9756B002C8F28 /* DemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoDataModel.xcdatamodel; sourceTree = "<group>"; };
 		9786AA831DB2EDEB00576C5A /* KR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9786AA861DB2EDEB00576C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9786AA881DB2EDEB00576C5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +32,7 @@
 		9786AA981DB2F02800576C5A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
+		9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				9786AA861DB2EDEB00576C5A /* AppDelegate.swift */,
 				9786AA881DB2EDEB00576C5A /* ViewController.swift */,
 				9786AA8A1DB2EDEB00576C5A /* Main.storyboard */,
+				0CCBE91A1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld */,
 				9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */,
 				9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */,
 				9786AA921DB2EDEB00576C5A /* Info.plist */,
@@ -74,7 +77,7 @@
 				9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */,
 				9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */,
 				9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */,
-				9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */,
+				9786AA9E1DB2F06A00576C5A /* CoreDataViewController.swift */,
 			);
 			path = KR;
 			sourceTree = "<group>";
@@ -153,7 +156,8 @@
 			files = (
 				9786AA891DB2EDEB00576C5A /* ViewController.swift in Sources */,
 				9786AA871DB2EDEB00576C5A /* AppDelegate.swift in Sources */,
-				9786AA9F1DB2F06A00576C5A /* DependentComponentPickerViewController.swift in Sources */,
+				0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */,
+				9786AA9F1DB2F06A00576C5A /* CoreDataViewController.swift in Sources */,
 				9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */,
 				9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */,
 				9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */,
@@ -310,6 +314,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0CCBE91A1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0CCBE91B1DC9756B002C8F28 /* DemoDataModel.xcdatamodel */,
+			);
+			currentVersion = 0CCBE91B1DC9756B002C8F28 /* DemoDataModel.xcdatamodel */;
+			path = DemoDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9786AA7B1DB2EDEA00576C5A /* Project object */;
 }

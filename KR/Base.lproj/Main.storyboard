@@ -31,7 +31,7 @@
         <!--Core Data-->
         <scene sceneID="hnk-en-Plg">
             <objects>
-                <viewController title="Core Data" id="OnI-4G-t7I" customClass="DependentComponentPickerViewController" customModule="KR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Core Data" id="OnI-4G-t7I" customClass="CoreDataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XBO-u5-hTt"/>
                         <viewControllerLayoutGuide type="bottom" id="Sbj-UK-lim"/>
