@@ -19,12 +19,6 @@ class ViewController: UIViewController {
         
         let fileURL = self.dataFileURL()
         if(NSFileManager.defaultManager().fileExistsAtPath(fileURL.path!)) {
-            if let array = NSArray(contentsOfURL: fileURL) as? [String] {
-                for var i = 0; i < array.count; i++ {
-                    lineFields[i].text = array[i]
-                }
-            }
-            
             let data = NSMutableData(contentsOfURL: fileURL)!
             let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
             let fourLines = unarchiver.decodeObjectForKey(ViewController.rootKey) as! FourLines
