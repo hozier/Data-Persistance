@@ -16,7 +16,8 @@ UIPickerViewDelegate, UIPickerViewDataSource
     var store:String!
     @IBOutlet var banner: UILabel!
     @IBOutlet var doublePicker: UIPickerView!
-    
+    @IBOutlet var banner2: UILabel!
+    @IBOutlet var banner1: UILabel!
     //Picker components are referred to by number, with the leftmost component 
     //being assigned zero and increasing
     //by one each move to the right.
@@ -72,13 +73,26 @@ UIPickerViewDelegate, UIPickerViewDataSource
         // run a query
         let query = "SELECT ROW, FIELD_DATA FROM FIELDS ORDER BY ROW"
         var statement:COpaquePointer = nil
+        var solution = ""
         if sqlite3_prepare_v2(database, query, -1, &statement, nil) == SQLITE_OK {
             while sqlite3_step(statement) == SQLITE_ROW {
                 let row = Int(sqlite3_column_int(statement, 0))
                 let rowData = sqlite3_column_text(statement, 1)
                 let fieldValue = String.fromCString(UnsafePointer<CChar>(rowData))
-            banner.text = fieldValue!
+                solution += "\(fieldValue!)\n"
+            
+                if(row == 0){
+                 banner.text = fieldValue!
+                }
+                else if( row == 1){
+                banner1.text = fieldValue!
+                }
+                else if(row == 2){
+                banner2.text = fieldValue!
+                }
             }
+            NSLog(solution)
+
             sqlite3_finalize(statement)
         }
         sqlite3_close(database)
@@ -109,9 +123,9 @@ UIPickerViewDelegate, UIPickerViewDataSource
             
                 if sqlite3_prepare_v2(database, update, -1, &statement, nil) == SQLITE_OK {
                 
-                    let text = "Last order purchased: \(order) from \(store)"
+                    let text = "Last order purchased: \(order) from \(store) "
                 
-                    sqlite3_bind_int(statement, 1, Int32(0))
+                    sqlite3_bind_int(statement, 1, Int32(1))
                     sqlite3_bind_text(statement, 2, text, -1, nil)
                 }
             

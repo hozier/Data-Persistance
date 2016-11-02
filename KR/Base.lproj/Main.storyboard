@@ -176,7 +176,27 @@
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id8-aQ-BBJ">
-                                <rect key="frame" x="0.0" y="275" width="600" height="21"/>
+                                <rect key="frame" x="0.0" y="337" width="600" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KQ0-gS-tlh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRY-lB-fCP">
+                                <rect key="frame" x="0.0" y="372" width="600" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fDd-XY-FSt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmD-c9-ELf">
+                                <rect key="frame" x="0.0" y="408" width="600" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -187,18 +207,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gTh-pq-H9A" firstAttribute="top" secondItem="QPu-Qf-Mb7" secondAttribute="bottom" constant="217" id="2w8-Or-XeC"/>
-                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="top" secondItem="Bkd-FN-feD" secondAttribute="bottom" constant="59" id="Fbh-ep-wH7"/>
-                            <constraint firstItem="QPu-Qf-Mb7" firstAttribute="top" secondItem="id8-aQ-BBJ" secondAttribute="bottom" constant="8" symbolic="YES" id="LOw-PK-ou7"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="centerX" secondItem="QPu-Qf-Mb7" secondAttribute="centerX" id="4yW-hd-goI"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="top" secondItem="QPu-Qf-Mb7" secondAttribute="bottom" constant="3" id="BhS-J3-UTa"/>
+                            <constraint firstItem="vmD-c9-ELf" firstAttribute="trailing" secondItem="nRY-lB-fCP" secondAttribute="trailing" id="Jb7-WD-aW3"/>
+                            <constraint firstItem="nRY-lB-fCP" firstAttribute="trailing" secondItem="id8-aQ-BBJ" secondAttribute="trailing" id="M7g-V6-WwC"/>
                             <constraint firstItem="QPu-Qf-Mb7" firstAttribute="top" secondItem="Bkd-FN-feD" secondAttribute="bottom" constant="88" id="OHo-0e-4tY"/>
-                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="centerX" secondItem="QPu-Qf-Mb7" secondAttribute="centerX" id="PXc-PE-Z8a"/>
+                            <constraint firstItem="gTh-pq-H9A" firstAttribute="top" secondItem="vmD-c9-ELf" secondAttribute="bottom" constant="122" id="UwI-BN-WTh"/>
+                            <constraint firstItem="nRY-lB-fCP" firstAttribute="leading" secondItem="id8-aQ-BBJ" secondAttribute="leading" id="Vdc-KG-c2i"/>
+                            <constraint firstItem="vmD-c9-ELf" firstAttribute="leading" secondItem="nRY-lB-fCP" secondAttribute="leading" id="WZH-Yj-VYC"/>
                             <constraint firstItem="QPu-Qf-Mb7" firstAttribute="centerX" secondItem="Bkd-FN-feD" secondAttribute="centerX" id="g9W-PO-JRj"/>
-                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="leading" secondItem="n9C-qu-u3H" secondAttribute="leading" id="vIy-AM-WUu"/>
+                            <constraint firstItem="nRY-lB-fCP" firstAttribute="top" secondItem="id8-aQ-BBJ" secondAttribute="bottom" constant="14" id="gZv-tf-YfZ"/>
+                            <constraint firstItem="vmD-c9-ELf" firstAttribute="top" secondItem="nRY-lB-fCP" secondAttribute="bottom" constant="15" id="iVZ-6l-nLi"/>
                             <constraint firstItem="Bkd-FN-feD" firstAttribute="centerX" secondItem="n9C-qu-u3H" secondAttribute="centerX" id="x5v-r0-2CA"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="leading" secondItem="n9C-qu-u3H" secondAttribute="leading" id="zmn-0k-g9P"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="tpt-AM-QU3"/>
                     <connections>
                         <outlet property="banner" destination="id8-aQ-BBJ" id="fR0-Av-bWA"/>
+                        <outlet property="banner1" destination="nRY-lB-fCP" id="Wxj-D1-kka"/>
+                        <outlet property="banner2" destination="vmD-c9-ELf" id="fNe-04-Rzk"/>
                         <outlet property="doublePicker" destination="Bkd-FN-feD" id="L0L-Lu-jqR"/>
                     </connections>
                 </viewController>
