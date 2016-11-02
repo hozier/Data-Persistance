@@ -12,11 +12,6 @@
 		9786AA8C1DB2EDEB00576C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8A1DB2EDEB00576C5A /* Main.storyboard */; };
 		9786AA8E1DB2EDEB00576C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */; };
 		9786AA911DB2EDEB00576C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */; };
-		9786AA991DB2F02800576C5A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA981DB2F02800576C5A /* DatePickerViewController.swift */; };
-		9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */; };
-		9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */; };
-		9786AA9F1DB2F06A00576C5A /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */; };
-		9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +22,6 @@
 		9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9786AA901DB2EDEB00576C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9786AA921DB2EDEB00576C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9786AA981DB2F02800576C5A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
-		9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
-		9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +60,6 @@
 				9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */,
 				9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */,
 				9786AA921DB2EDEB00576C5A /* Info.plist */,
-				9786AA981DB2F02800576C5A /* DatePickerViewController.swift */,
-				9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */,
-				9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */,
-				9786AA9C1DB2F05900576C5A /* DoubleComponentPickerViewController.swift */,
-				9786AA9E1DB2F06A00576C5A /* DependentComponentPickerViewController.swift */,
 			);
 			path = KR;
 			sourceTree = "<group>";
@@ -152,11 +137,6 @@
 			files = (
 				9786AA891DB2EDEB00576C5A /* ViewController.swift in Sources */,
 				9786AA871DB2EDEB00576C5A /* AppDelegate.swift in Sources */,
-				9786AA9F1DB2F06A00576C5A /* DependentComponentPickerViewController.swift in Sources */,
-				9786AA9D1DB2F05900576C5A /* DoubleComponentPickerViewController.swift in Sources */,
-				9786AAA11DB2F08300576C5A /* CustomPickerViewController.swift in Sources */,
-				9786AA9B1DB2F04100576C5A /* SingleComponentPickerViewController.swift in Sources */,
-				9786AA991DB2F02800576C5A /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +284,7 @@
 				9786AA971DB2EDEB00576C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

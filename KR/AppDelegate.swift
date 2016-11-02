@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  KR
+//  Persistence
 //
-//  Created by Philron William Hozier on 10/15/16.
-//  Copyright © 2016 Philron William Hozier. All rights reserved.
+//  Created by James Morris on 11/1/16.
+//  Copyright © 2016 James Morris. All rights reserved.
 //
 
 import UIKit
