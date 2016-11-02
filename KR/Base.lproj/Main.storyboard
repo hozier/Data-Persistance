@@ -31,7 +31,7 @@
         <!--Core Data-->
         <scene sceneID="hnk-en-Plg">
             <objects>
-                <viewController title="Core Data" id="OnI-4G-t7I" customClass="CoreDataViewController" sceneMemberID="viewController">
+                <viewController title="Core Data" id="OnI-4G-t7I" customClass="CoreDataViewController" customModule="KR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XBO-u5-hTt"/>
                         <viewControllerLayoutGuide type="bottom" id="Sbj-UK-lim"/>
@@ -105,11 +105,20 @@
                                 <rect key="frame" x="29" y="172" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Commit Lines to Persistent Storage"/>
+                                <connections>
+                                    <action selector="commitToPersistence:" destination="OnI-4G-t7I" eventType="touchUpInside" id="fxE-ti-pCM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Core Data" image="coredataicon" id="b16-uH-ZNd"/>
+                    <connections>
+                        <outlet property="lineOneLabel" destination="5JX-Ot-StH" id="hYe-Ac-Sf9"/>
+                        <outlet property="lineOneTextField" destination="rO2-Bu-5tA" id="ccn-1l-RK1"/>
+                        <outlet property="lineTwoLabel" destination="YVd-Cx-GCq" id="2FV-mY-HJU"/>
+                        <outlet property="lineTwoTextField" destination="3ej-FL-PJR" id="Smg-4f-TyH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zm7-tl-1t8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

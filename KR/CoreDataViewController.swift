@@ -10,6 +10,15 @@ import UIKit
 
 class CoreDataViewController: UIViewController {
 
+    @IBOutlet weak var lineOneTextField: UITextField!
+    @IBOutlet weak var lineTwoTextField: UITextField!
+    @IBOutlet weak var lineOneLabel: UILabel!
+    @IBOutlet weak var lineTwoLabel: UILabel!
+    
+    @IBAction func commitToPersistence(sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

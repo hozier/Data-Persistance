@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C05E8FF1DC9830E002BAB74 /* Lines+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */; };
+		0C05E9001DC9830E002BAB74 /* Lines+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */; };
 		0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBE91A1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld */; };
 		0CCBE91F1DC977F1002C8F28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCBE91E1DC977F1002C8F28 /* CoreData.framework */; };
 		0CCBE9211DC97871002C8F28 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBE9201DC97871002C8F28 /* DataController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lines+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lines+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0CCBE91B1DC9756B002C8F28 /* DemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoDataModel.xcdatamodel; sourceTree = "<group>"; };
 		0CCBE91E1DC977F1002C8F28 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0CCBE9201DC97871002C8F28 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				9786AA8D1DB2EDEB00576C5A /* Assets.xcassets */,
 				9786AA8F1DB2EDEB00576C5A /* LaunchScreen.storyboard */,
 				9786AA921DB2EDEB00576C5A /* Info.plist */,
+				0C05E8FD1DC9830E002BAB74 /* Lines+CoreDataClass.swift */,
+				0C05E8FE1DC9830E002BAB74 /* Lines+CoreDataProperties.swift */,
 				9786AA981DB2F02800576C5A /* DatePickerViewController.swift */,
 				9786AAA01DB2F08300576C5A /* CustomPickerViewController.swift */,
 				9786AA9A1DB2F04100576C5A /* SingleComponentPickerViewController.swift */,
@@ -170,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9786AA891DB2EDEB00576C5A /* ViewController.swift in Sources */,
+				0C05E8FF1DC9830E002BAB74 /* Lines+CoreDataClass.swift in Sources */,
 				9786AA871DB2EDEB00576C5A /* AppDelegate.swift in Sources */,
+				0C05E9001DC9830E002BAB74 /* Lines+CoreDataProperties.swift in Sources */,
 				0CCBE91C1DC9756B002C8F28 /* DemoDataModel.xcdatamodeld in Sources */,
 				9786AA9F1DB2F06A00576C5A /* CoreDataViewController.swift in Sources */,
 				0CCBE9211DC97871002C8F28 /* DataController.swift in Sources */,
