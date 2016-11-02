@@ -159,7 +159,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPu-Qf-Mb7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPu-Qf-Mb7">
                                 <rect key="frame" x="277" y="304" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
@@ -167,7 +167,7 @@
                                     <action selector="onButtonPressed:" destination="RDv-Li-827" eventType="touchUpInside" id="mtW-U7-lQT"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-FN-feD">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-FN-feD">
                                 <rect key="frame" x="140" y="0.0" width="320" height="216"/>
                                 <animations/>
                                 <connections>
@@ -175,16 +175,30 @@
                                     <outlet property="delegate" destination="RDv-Li-827" id="KCE-oa-x2k"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id8-aQ-BBJ">
+                                <rect key="frame" x="0.0" y="275" width="600" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gTh-pq-H9A" firstAttribute="top" secondItem="QPu-Qf-Mb7" secondAttribute="bottom" constant="217" id="2w8-Or-XeC"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="top" secondItem="Bkd-FN-feD" secondAttribute="bottom" constant="59" id="Fbh-ep-wH7"/>
+                            <constraint firstItem="QPu-Qf-Mb7" firstAttribute="top" secondItem="id8-aQ-BBJ" secondAttribute="bottom" constant="8" symbolic="YES" id="LOw-PK-ou7"/>
                             <constraint firstItem="QPu-Qf-Mb7" firstAttribute="top" secondItem="Bkd-FN-feD" secondAttribute="bottom" constant="88" id="OHo-0e-4tY"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="centerX" secondItem="QPu-Qf-Mb7" secondAttribute="centerX" id="PXc-PE-Z8a"/>
+                            <constraint firstItem="QPu-Qf-Mb7" firstAttribute="centerX" secondItem="Bkd-FN-feD" secondAttribute="centerX" id="g9W-PO-JRj"/>
+                            <constraint firstItem="id8-aQ-BBJ" firstAttribute="leading" secondItem="n9C-qu-u3H" secondAttribute="leading" id="vIy-AM-WUu"/>
                             <constraint firstItem="Bkd-FN-feD" firstAttribute="centerX" secondItem="n9C-qu-u3H" secondAttribute="centerX" id="x5v-r0-2CA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="tpt-AM-QU3"/>
                     <connections>
+                        <outlet property="banner" destination="id8-aQ-BBJ" id="fR0-Av-bWA"/>
                         <outlet property="doublePicker" destination="Bkd-FN-feD" id="L0L-Lu-jqR"/>
                     </connections>
                 </viewController>
